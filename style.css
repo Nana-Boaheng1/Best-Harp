@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: #fff; /* Set your brand color */
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  margin-right: 200px; 
+  display: flex;
+}
+
+nav li {
+  margin: 0px 1px 1px ; 
+  display: inline-block;
+}
+
+nav li:last-child {
+  margin-right: 0; 
+}
+
+nav li a:hover {
+  color: #ff6600;
+}
+
+nav li a:active {
+  color: #ff6600;
+}
+
+nav a {
+  text-decoration: none;
+  color: #070707; /* Set your text color */
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Adjusted alignment to center it vertically */
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100px;
+  margin: 0 0 0 150px
+}
+/* Hero Section */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/31.jpg) center/cover no-repeat;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 10%;
+}
+
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 0 25% 60%;
+  text-align: left;
+  margin-top: 480px;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 80px;
+}
+
+.hero-text p {
+  font-size: 1.5em; /* Adjust the font size for the paragraph */
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  flex: 0 0 60%;
+}
+
+.hero-image img {
+  width: 95%; 
+  height: 85vh;
+  max-height: 100vh;
+  margin-top: 145px;
+  /* object-fit: contain;  */
+}
+
+.cta-button {
+  height: 63px;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 50px;
+}
+
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff6600; /* CTA button color */
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all ease .55s;
+}
+
+.cta-button:hover {
+  background: transparent;
+  border: 2px solid #f4f4f4;
+  color: #f4f4f4;
+}
+
+/* Products Page */
+.products {
+  background: #8f8b8b; /* Set a background color if needed */
+  color: #333; /* Set text color */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  width: 100%;
+  height: 100vh;
+  flex-direction: column; /* Stack the items vertically */
+  text-align: center;
+  padding: 20px 10%;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  width: 300px;
+  margin: 20px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.par p {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+/* About Us Page */
+.about {
+  background: #8f8b8b; /* Set a background color if needed */
+  color: #333; /* Set text color */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  width: 100%;
+  height: 100vh;
+  flex-direction: column; /* Stack the items vertically */
+  text-align: center;
+  padding: 20px 10%;
+}
+
+/* Contact Page */
+.contact {
+  background: #8f8b8b; /* Set a background color if needed */
+  color: #333; /* Set text color */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  width: 100%;
+  height: 100vh;
+  flex-direction: column; /* Stack the items vertically */
+  text-align: center;
+  padding: 20px 10%;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-info {
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Style the form inputs and textarea */
+.contact form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form input[type="submit"] {
+  display: inline-block;
+  background-color: #ff6600; /* Button color */
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all ease .55s;
+}
+
+.contact form input[type="submit"]:hover {
+  background: transparent;
+  border: 2px solid #f4f4f4;
+  color: #f4f4f4;
+}
+
+/* Footer */
+footer {
+  background-color: #333; /* Set footer background color */
+  color: #fff; /* Set footer text color */
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 10px;
+  }
+
+  .cta-button {
+    font-size: 1em;
+  }
+
+  /* Add responsive styles for other sections as needed */
+}
